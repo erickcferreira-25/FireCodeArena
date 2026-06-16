@@ -1,20 +1,20 @@
-const readline = require("readline-sync");
+const readline = require("readline-sync")
 
-let idades = [];
+let idades = []
 
 for (let i = 0; i < 5; i++){
-    let idade = readline.question("Digite a idade: ");
-    idades.push(idade);
+    let idade = readline.question("Digite a idade: ")
+    idades.push(idade)
 }
-let quantidadeMaiores = 0;
-let quantidadeMenores = 0;
+let quantidadeMaiores = 0
+let quantidadeMenores = 0
 
 for (let i = 0; i < 5; i++){
     if (idades[i] >= 18){
-        quantidadeMaiores++;
+        quantidadeMaiores++
     } else {
-        quantidadeMenores++;
+        quantidadeMenores++
     }
 }
-console.log("Quantidade de pessoas maiores de idade:", quantidadeMaiores);
-console.log("Quantidade de pessoas menores de idade:", quantidadeMenores);
+console.log("Quantidade de pessoas maiores de idade:", quantidadeMaiores)
+console.log("Quantidade de pessoas menores de idade:", quantidadeMenores)
