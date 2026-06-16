@@ -1,22 +1,24 @@
-const readline = require("readline-sync");
+const readline = require("readline-sync")
 
-let notas = [];
-
-for (let i = 0; i < 4; i++){
-    let nota = readline.question("Digite a nota: ");
-    notas.push(nota);
-}
-
-let soma = 0;
+let notas = []
 
 for (let i = 0; i < 4; i++){
-    soma += Number(notas[i]);
+    let nota = readline.question("Digite a nota: ")
+    notas.push(nota)
 }
 
-let media = soma / 4;
-console.log("A média é:", media);
+let soma = 0
+
+for (let i = 0; i < 4; i++){
+    soma += notas[i]
+}
+
+let media = soma / 4
+
+console.log("Média:", media)
+
 if (media >= 7){
-    console.log("Aprovado");
+    console.log("Aprovado")
 } else {
-    console.log("Reprovado");
-}
+    console.log("Reprovado")
+}  
