@@ -20,9 +20,9 @@ for (let i = 0; i < quantidade; i++){
         maiorNota = notas[i]
     }
     if (notas[i] < menorNota){
-        menorNota = notas[i];
+        menorNota = notas[i]
     }
-    soma += Number(notas[i])
+    soma += notas[i]
     if (notas[i] >= 7){
         aprovados++
     } else {
